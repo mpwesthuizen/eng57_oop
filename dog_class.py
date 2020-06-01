@@ -1,12 +1,11 @@
+from animal_class import *
 
-class Dog():
+class Dog(Animal):
 
-    def __init__(self, name, age, coat, colour, tail):
-        self.name = name
+    def __init__(self, age=0):
+        super().__init__(self, "Irish setter", True, "red", "Clifford")
         self.age = age
-        self.coat = coat
-        self.colour = colour
-        self.tail = bool(tail)
+
 
 
     def bark(self):
@@ -17,12 +16,3 @@ class Dog():
             return 'nom nom nom ... *starts vomitting*'
         else:
             return 'nom nom nom nom nom'
-
-    def drink(self):
-        return 'lap lap lap *the bowl was emptied*'
-
-    def sleep(self):
-        return 'zzzzZZzZZzzzz'
-
-    def chase(self, object):
-        return 'runs after' + object

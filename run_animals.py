@@ -1,28 +1,25 @@
-from dog_class import *
-from cat_class import *
+from dog_class import Dog
+from cat_class import Cat
 
 
 
 # Initialise dog object (name, age, coat, colour, tail)
-ferral_dog = Dog('???', '???', 'scruffy and tangled wire hair', 'dirty grey', tail=False)
-print(ferral_dog.age)
-print(ferral_dog.tail)
+clifford_dog = Dog(age=4)
+print(clifford_dog.age)
+print(clifford_dog.tail)
 
 # call method .bark()
-print(ferral_dog.bark())
+print(clifford_dog.bark())
 
 # calling multiple arg function .eat()
-print(ferral_dog.eat("toxic waste"))
+print(clifford_dog.eat("toxic waste"))
 
 
 # Initialise cat object (name, age, fur, colour, tail, claws)
-house_cat= Cat('Precious', 3,'long and fluffy', 'cream', True)
-
-print(house_cat.fur)
-print(house_cat.claws)
+sylvester_cat= Cat(age=10)
 
 # call method .purr()
-print(house_cat.purr())
+print(sylvester_cat.purr())
 
-# polymorph with .eat()
-print(house_cat.eat("fish"))
+# .eat()
+print(sylvester_cat.eat("fish"))
